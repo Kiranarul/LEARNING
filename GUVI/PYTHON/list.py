@@ -27,6 +27,6 @@ for i in lists:
     print("Value : \" " + i + " \" Index Value : " + str(index))
     index += 1
 
+lists.remove("car")
 
-
-
+print(lists)
