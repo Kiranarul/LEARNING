@@ -12,3 +12,12 @@ print(f.read())
 f.close()
 
 f = open("new.txt", "r")
+print(f.readline(2))
+f.close()
+
+os.remove("new.txt")
+
+if os.path.exists("stings.py"):
+    print("String.py exists in python folder")
+else:
+    print("File not found")
