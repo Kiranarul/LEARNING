@@ -12,6 +12,7 @@ def fibonacci(number):
     fib.append(int(fib[len1-2] + fib[len1-1]))
     if len1 == number:
         print(fib[:len1])
+        print(*fib[:len1], sep=", ")  # To print without brackets
     else:
         fibonacci(rep)
 
